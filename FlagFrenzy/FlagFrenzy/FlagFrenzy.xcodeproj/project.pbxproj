@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A2279E0E7B6BF2D42FF2AD /* Pods_FlagFrenzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2106D5E85C4B37063D4011C0 /* Pods_FlagFrenzy.framework */; };
 		9288F3581DDFA49C003274F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288F3571DDFA49C003274F9 /* AppDelegate.swift */; };
 		9288F35A1DDFA49C003274F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288F3591DDFA49C003274F9 /* ViewController.swift */; };
 		9288F35D1DDFA49C003274F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288F35B1DDFA49C003274F9 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2106D5E85C4B37063D4011C0 /* Pods_FlagFrenzy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlagFrenzy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288F3541DDFA49C003274F9 /* FlagFrenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagFrenzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288F3571DDFA49C003274F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9288F3591DDFA49C003274F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		9288F3611DDFA49C003274F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9288F3641DDFA49C003274F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9288F3661DDFA49C003274F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECCC5BC1614A8F88B8BEDCA2 /* Pods-FlagFrenzy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlagFrenzy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlagFrenzy/Pods-FlagFrenzy.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0A6AEB2ECAEF1D786DDD1F /* Pods-FlagFrenzy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlagFrenzy.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlagFrenzy/Pods-FlagFrenzy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A2279E0E7B6BF2D42FF2AD /* Pods_FlagFrenzy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45BBE1852ABEFBF7C9C2DC13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECCC5BC1614A8F88B8BEDCA2 /* Pods-FlagFrenzy.debug.xcconfig */,
+				FE0A6AEB2ECAEF1D786DDD1F /* Pods-FlagFrenzy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9288F34B1DDFA49C003274F9 = {
 			isa = PBXGroup;
 			children = (
 				9288F3561DDFA49C003274F9 /* FlagFrenzy */,
 				9288F3551DDFA49C003274F9 /* Products */,
+				45BBE1852ABEFBF7C9C2DC13 /* Pods */,
+				E1EB1952169424BF95EB16E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = FlagFrenzy;
 			sourceTree = "<group>";
 		};
+		E1EB1952169424BF95EB16E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2106D5E85C4B37063D4011C0 /* Pods_FlagFrenzy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9288F3691DDFA49C003274F9 /* Build configuration list for PBXNativeTarget "FlagFrenzy" */;
 			buildPhases = (
+				682B7775F1A16E100E06A442 /* [CP] Check Pods Manifest.lock */,
 				9288F3501DDFA49C003274F9 /* Sources */,
 				9288F3511DDFA49C003274F9 /* Frameworks */,
 				9288F3521DDFA49C003274F9 /* Resources */,
+				4B67BFEBD34F8506E9EEC662 /* [CP] Embed Pods Frameworks */,
+				AADBE2F514303E980510519E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +126,7 @@
 				TargetAttributes = {
 					9288F3531DDFA49C003274F9 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -133,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B67BFEBD34F8506E9EEC662 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlagFrenzy/Pods-FlagFrenzy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682B7775F1A16E100E06A442 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AADBE2F514303E980510519E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlagFrenzy/Pods-FlagFrenzy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9288F3501DDFA49C003274F9 /* Sources */ = {
@@ -262,6 +338,7 @@
 		};
 		9288F36A1DDFA49C003274F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECCC5BC1614A8F88B8BEDCA2 /* Pods-FlagFrenzy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlagFrenzy/Info.plist;
@@ -274,6 +351,7 @@
 		};
 		9288F36B1DDFA49C003274F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0A6AEB2ECAEF1D786DDD1F /* Pods-FlagFrenzy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlagFrenzy/Info.plist;
@@ -303,6 +381,7 @@
 				9288F36B1DDFA49C003274F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
