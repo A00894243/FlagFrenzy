@@ -21,50 +21,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vcl-wR-rms">
-                                <rect key="frame" x="0.0" y="28" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-mP-rdz">
+                                <rect key="frame" x="0.0" y="276" width="375" height="391"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1e-S7-qLs">
+                                <rect key="frame" x="82" y="107" width="220" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWq-BV-ROU">
+                                <rect key="frame" x="77" y="227" width="220" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="openFlagModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7H-3g-BcR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Vcl-wR-rms" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="D4E-XS-vAe"/>
-                            <constraint firstItem="Vcl-wR-rms" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="KdZ-LH-DYc"/>
-                            <constraint firstItem="Vcl-wR-rms" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="PPo-ME-XKW"/>
-                            <constraint firstItem="Vcl-wR-rms" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hyQ-TT-IWU"/>
+                            <constraint firstItem="BWq-BV-ROU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="24a-GU-aK7"/>
+                            <constraint firstItem="h1e-S7-qLs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="GWA-eE-3ll"/>
+                            <constraint firstItem="h1e-S7-qLs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LIK-yc-yoI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6JU-mP-rdz" secondAttribute="bottom" constant="78" id="eB0-2T-01W"/>
+                            <constraint firstItem="BWq-BV-ROU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="207" id="jJ4-nY-94A"/>
+                            <constraint firstItem="6JU-mP-rdz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q4M-MG-L2W"/>
+                            <constraint firstItem="6JU-mP-rdz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="256" id="z2h-ti-SLu"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myTableView" destination="Vcl-wR-rms" id="Imm-AK-Brn"/>
+                        <outlet property="countryNameButton" destination="BWq-BV-ROU" id="yRu-md-pp9"/>
+                        <outlet property="countryNameLabel" destination="h1e-S7-qLs" id="1dp-js-QdQ"/>
+                        <outlet property="myPicker" destination="6JU-mP-rdz" id="6g3-Fk-oPC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="YDn-Tm-XZl">
-            <objects>
-                <viewController id="eOu-AZ-n2B" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vhz-ub-ZBn"/>
-                        <viewControllerLayoutGuide type="bottom" id="ypI-9U-5fF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="j8y-qK-ng1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYJ-2z-RZy">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dlY-q0-eZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1214" y="36"/>
         </scene>
     </scenes>
 </document>
