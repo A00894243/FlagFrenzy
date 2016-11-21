@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18A2279E0E7B6BF2D42FF2AD /* Pods_FlagFrenzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2106D5E85C4B37063D4011C0 /* Pods_FlagFrenzy.framework */; };
+		3F00A83F1DE24D4E004DDE01 /* FlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00A83E1DE24D4E004DDE01 /* FlagViewController.swift */; };
 		9288F3581DDFA49C003274F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288F3571DDFA49C003274F9 /* AppDelegate.swift */; };
 		9288F35A1DDFA49C003274F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288F3591DDFA49C003274F9 /* ViewController.swift */; };
 		9288F35D1DDFA49C003274F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288F35B1DDFA49C003274F9 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2106D5E85C4B37063D4011C0 /* Pods_FlagFrenzy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlagFrenzy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F00A83E1DE24D4E004DDE01 /* FlagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagViewController.swift; sourceTree = "<group>"; };
 		9288F3541DDFA49C003274F9 /* FlagFrenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagFrenzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288F3571DDFA49C003274F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9288F3591DDFA49C003274F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				9288F3631DDFA49C003274F9 /* LaunchScreen.storyboard */,
 				9288F3661DDFA49C003274F9 /* Info.plist */,
 				9288F35E1DDFA49C003274F9 /* FlagFrenzy.xcdatamodeld */,
+				3F00A83E1DE24D4E004DDE01 /* FlagViewController.swift */,
 			);
 			path = FlagFrenzy;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F00A83F1DE24D4E004DDE01 /* FlagViewController.swift in Sources */,
 				9288F35A1DDFA49C003274F9 /* ViewController.swift in Sources */,
 				9288F3601DDFA49C003274F9 /* FlagFrenzy.xcdatamodeld in Sources */,
 				9288F3581DDFA49C003274F9 /* AppDelegate.swift in Sources */,

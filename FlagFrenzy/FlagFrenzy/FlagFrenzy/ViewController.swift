@@ -14,6 +14,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var myTableView: UITableView!
     var data : [String: String] = [:]
+    var id : [String] = []
+    var values : [String] = []
     //http://www.geognos.com/api/en/countries/info/all.json
     //http://www.geognos.com/api/en/countries/flag/BE.png
     
@@ -21,7 +23,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         super.viewDidLoad()
         myTableView.dataSource = self
         myTableView.delegate = self
-        data = loadValues()
+        //data = loadValues()
+        loadValues()
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,26 +35,34 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         // Dispose of any resources that can be recreated.
     }
     
-    func loadValues() -> [String: String]{
-        var holder = [String: String]()
+    func loadValues() {
+        //var holder = [String: String]()
         Alamofire.request("http://www.geognos.com/api/en/countries/info/all.json").responseJSON {
             (response) -> Void in
             if((response.result.value) != nil){
-                debugPrint(response)
+                //debugPrint(response)
                 let json = JSON(response.result.value!)
-                let results = JSON(json["Results"])
+                let results = json["Results"]
+                debugPrint(json["Results"])
+                debugPrint(results)
                 for (key,subJson):(String, JSON) in results {
-                    let temp = subJson["name"].stringValue
+                    let temp = subJson["Name"].stringValue
                     let temp2 = key
-                    holder[temp2] = temp
+                    print(key)
+                    self.id.append(temp2)
+                    self.values.append(temp)
                 }
-                print(holder)
-                self.data = holder
+                //print(holder)
+                //self.data = holder
+                print(self.id)
+                print(self.values)
+                //self.id.sort()
+                //self.values.sort()
                 self.myTableView.reloadData()
             }
         }
         
-        return holder
+        //return holder
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,14 +73,14 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ElementCell")
         
         // Adding the right informations
-        cell.textLabel?.text = data["fds"]
-        cell.detailTextLabel?.text = data["fds"]
+        cell.textLabel?.text = values[indexPath.row]
+        cell.detailTextLabel?.text = id[indexPath.row]
         
         // Returning the cell
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return id.count
     }
 
 
